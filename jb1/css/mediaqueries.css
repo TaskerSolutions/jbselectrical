@@ -1,0 +1,58 @@
+/* original values are designed for small mobile phones */
+
+/* --------------- 768px (Tablets) --------------- */
+@media only screen and (min-width: 768px) {
+	body {font-size: 14px;}
+	.content-container {padding: 0px 80px 0px 80px;}
+	
+
+	/* make nav links visible in nav bar */
+	.topnav {display: inline-block;} 
+	.topnav div {display: block;}
+    .topnav a {display: block;} 
+	.topnav .icon {display: none;}
+}
+
+
+
+
+/* --------------- 992px (laptops) --------------- */
+@media only screen and (min-width: 992px) {
+	body {font-size: 15px;}
+	.column-text {width: 60%;}
+	#trenching-btn {display: none;}
+	#commercial-btn {display: none;}
+	#residential-btn {display: none;}
+	#trenching-text {display: block;}
+	#commercial-text {display: block;}
+	#residential-text {display: block;}
+}
+
+@media only screen and (min-width: 992px)  and (orientation: landscape) {
+	.fixedbg {height: 70vh;}
+	.content-container-home {margin-top: 70vh;}
+}
+
+@media only screen and (min-width: 992px)  and (orientation: portrait) {
+	.fixedbg {height: 50vh;}
+	.content-container-home {margin-top: 50vh;}
+}
+
+
+
+
+
+/* --------------- 1312px (large desktops) --------------- */
+@media only screen and (min-width: 1312px) {
+	body {font-size: 16px;}
+}
+
+@media only screen and (min-width: 1312px) and (orientation: landscape) {
+	.fixedbg {height: 75vh;}
+	.content-container-home {margin-top: 75vh;}
+}
+
+@media only screen and (min-width: 1312px) and (orientation: portrait) {
+	.fixedbg {height: 50vh;}
+	.content-container-home {margin-top: 50vh;}
+}

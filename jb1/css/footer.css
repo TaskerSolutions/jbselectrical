@@ -1,0 +1,101 @@
+.contact-info {
+	position: static;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	display:  inline-block;
+	text-align: center;
+	font-size: 1.2em;
+	padding: 30px 40px 20px 40px;
+	line-height: 1.7;
+}
+
+.contact-info a {
+	color: #FFFFFF;
+	text-decoration:none;
+}
+
+
+/* --- company card --- */
+.company-card {
+	margin: auto;
+	max-width: 400px;
+	position: relative;
+	list-style-type: none;
+}
+
+.company-card-item {
+	background: none;
+    display: table;
+    padding-top: 10px;
+	padding-bottom: 10px;
+	width: 100%;
+	position: relative;
+}
+
+.company-card-icon {
+	display: table-cell;
+    height: 2.25rem;
+    position: relative;
+    vertical-align: middle;
+	padding-right: 1.25rem;
+    text-align: center;
+    width: 3.5rem;
+}
+
+.company-card-text {
+	font-family: 'Manrope', sans-serif;
+	font-size: 0.875rem;
+    line-height: 2.6;
+    position: static;
+	vertical-align: middle;
+}
+
+.white-phone-icon {
+    line-height: 1;
+	display: inline-block;
+	background: url(../media/white_phone_icon_small.png);
+	width: 30px;
+	height: 45px;
+}
+
+.white-email-icon {
+    line-height: 1;
+	display: inline-block;
+	background: url(../media/white_email_icon_small.png);
+	background-size: cover;
+	width: 36px;
+	height: 24px;
+}
+
+.white-location-icon {
+    line-height: 1;
+	display: inline-block;
+	background: url(../media/white_location_icon_small.png);
+	background-size: cover;
+	width: 23px;
+	height: 30px;
+}
+
+
+/* ----------- additional-contact-info ------*/
+.additional-contact-info {
+	float: right;
+	display: none;
+}
+
+
+/* --- copyright and developer credits --- */
+.copyright-div {
+	position: static;
+	width: 100%;
+	bottom: 0px;
+	padding: 20px;
+	color: white;
+	font-size: 0.8em;
+}
+
+.copyright-div a {
+	color: #FFFFFF;
+	text-decoration:none;
+}

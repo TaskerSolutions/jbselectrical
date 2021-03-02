@@ -1,0 +1,81 @@
+.topnav-container {
+	padding: 1vh;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	z-index: 1;
+	background-color: black;
+	border-color: rgb(70, 70, 70);
+	border-style: solid;
+	border-width: 0px 0px 1px 0px;
+}
+
+.topnav {
+	max-width: 1050px;
+	margin: auto;
+	overflow: hidden;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.topnav.responsive {position: relative;}
+/* responsive class (removed by JS) displays the links horizontally instead of vertically */ 
+
+
+.topnav div {
+	display: none;
+}
+.topnav.responsive div {
+	display: block;
+	float: none;
+	text-align: left;
+}
+
+.topnav a {
+ 	float: left;
+  	display: none;
+  	color: #f2f2f2;
+	text-align: center;
+ 	text-decoration: none;
+ 	font-size: 17px;
+	padding: 14px 25px;
+	height: 53px;
+	line-height: 32px;
+}
+.topnav.responsive a {
+	float: none;
+	display: block;
+	text-align: left;
+}
+
+.topnav a:hover {
+  background-color: #191F2B;
+  opacity: 0.7;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+.topnav .icon {
+	display: block;
+	float: right;
+	padding: 0px;
+	background: url(../media/icon_menu_white.png);
+	background-position: center;
+	background-size: 90%;
+	width: 40px;
+	height: 40px;
+}
+.topnav.responsive a.icon {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 10px;
+	background: url(../media/icon_exit_white.png);
+	background-position: center;
+	background-size: 90%;
+	width: 25px;
+	height: 25px;
+}
