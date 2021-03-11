@@ -16,5 +16,3 @@ function showMore(i) {
   }
   $(text).toggleClass("open closed");
 }
-
-detectSwipe('touch-field', testSwipe);
