@@ -1,0 +1,48 @@
+/* text */
+
+.text-green-grey { color: #999B84 } /* feminine neautral 1 */
+.text-pale-white { color: #F4EEED } /* feminine neautral 2 */
+.text-pale-pink { color: #EFD9D1 } /* feminine neautral 3 */
+.text-pink-red { color: #DDB7AB } /* feminine neautral 4 */
+
+.text-black { color: black;}
+.white { color: white;}
+.red { color: rgb(211, 102, 102); }
+.text-white { color: white;}
+.text-red { color: rgb(211, 102, 102); }
+
+
+
+/* borders */
+
+.border-green-grey { border: 1px solid #999B84 } /* feminine neautral 1 */
+.border-pale-white { border: 1px solid #F4EEED } /* feminine neautral 2 */
+.border-pale-pink { border: 1px solid #EFD9D1 } /* feminine neautral 3 */
+.border-pink-red { border: 1px solid #DDB7AB } /* feminine neautral 4 */
+
+
+.border-white {	border: 2px solid rgb(255, 255, 255); }
+
+
+
+/* backgrounds */
+
+.background-green-grey { background-color: #999B84 } /* feminine neautral 1 */
+.background-pale-white { background-color: #F4EEED } /* feminine neautral 2 */
+.background-pale-pink { background-color: #EFD9D1 } /* feminine neautral 3 */
+.background-pink-red { background-color: #DDB7AB } /* feminine neautral 4 */
+
+
+.background-grey { background-color: #333333; }
+.background-pale-blue { background-color: #d7eaf5; }
+.background-blue { background-color: #54a8c9; }
+.background-blue:hover { background-color: #1f8fbb;}
+.background-orange { background-color: #cc995f; }
+.background-orange:hover { background-color: #c9802d; }
+.background-green { background-color: #a9ce9f; }
+.background-green:hover { background-color: #5aad45; }
+.background-transparent:hover {	background-color: #000000c9; }
+.background-pastal-light-blue { background-color: #7ea7b9; }
+.background-pastal-blue { background-color: #6b88a7; }
+.background-pastal-dark-blue { background-color: #4b6584; }
+/* pastal blue hover background-color: #244c7a; */

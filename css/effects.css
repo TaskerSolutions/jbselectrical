@@ -1,0 +1,51 @@
+/* come in from bottom effect */
+.come-in {
+  transform: translateY(50px);
+  opacity: 0.2;
+  animation: come-in 2s ease forwards;
+}
+.come-in:nth-child(3n - 2) {
+  animation-duration: 1s;
+}
+.come-in:nth-child(3n - 1) {
+  animation-duration: 1.5s;
+}
+
+
+.already-visible {
+  opacity: 0.2;
+  transform: translateY(50px);
+  animation: come-in 2s ease forwards;
+}
+.already-visible:nth-child(4n - 3) {
+  animation-duration: 1.8s;
+}
+.already-visible:nth-child(4n - 2) {
+  animation-duration: 1.6s;
+}
+.already-visible:nth-child(4n - 1) {
+  animation-duration: 1.4s;
+}
+
+
+@keyframes come-in {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+/* image rotation */
+.rotate-image {
+  animation: rotation 5s linear infinite;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+

@@ -1,0 +1,21 @@
+.share-text {
+    font-size: 1.3em;
+}
+
+.links-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    width: fit-content;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.share-link {
+    height: 40px;
+    margin: 10px;
+}
+
+.share-image {
+    width: 40px;
+}

@@ -1,0 +1,41 @@
+.ready {
+  opacity:0;
+  transform: translateY(50px);
+}
+
+.active {
+  opacity:1;
+  transform: translateY(0px);
+}
+
+.reveal-in {
+  -webkit-transition: all 600ms ease-in-out;
+  -moz-transition: all 600ms ease-in-out;
+  -ms-transition: all 600ms ease-in-out;
+  -o-transition: all 600ms ease-in-out;
+  transition: all 600ms ease-in-out;
+}
+
+
+
+
+
+.package-item {
+  background: #ccc;
+  padding: 10px;
+}
+
+.closed {
+  max-width: 600px;
+  overflow: hidden;
+  max-height: 0px;
+  transition: all 0.5s ease;
+  will-change: transform;
+}
+
+.open {
+  max-height: 1000px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  will-change: transform;
+}

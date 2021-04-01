@@ -1,0 +1,94 @@
+header {
+	width: 100vw;
+	z-index: 100;
+	position: fixed;
+	top: 0;
+	height: fit-content;
+}
+
+.navbar:last-child {
+	margin-right: 0px;
+}
+
+.header-container {
+	max-width: 780px;
+	margin: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	transition: 0.5s ease-in-out;
+}
+.nav-up { 
+	padding-top: 9px;
+	padding-bottom: 9px;
+}
+
+.header-table {
+	display: table;
+	width: 100%;
+}
+
+.logo-container {
+	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+	vertical-align: middle;
+	float: left;
+	max-width: 70%;
+}
+
+.logo {
+	float: left;
+	height: 40px;
+	width: auto;
+	transition: 0.5s ease-in-out;
+}
+
+.logo-text {
+	margin-left: 15px;
+	font-size: 1.3em;
+	text-align: left;
+	text-transform: capitalize;
+}
+
+
+.custom-toggler.navbar-toggler {
+	border: none;
+	float: right;
+	padding-right: 0px;
+	padding-left: 0px;
+} 
+
+
+.navbar-collapse {
+	justify-content: flex-end;
+}
+
+.header-contact-btn {
+	margin-top: 16px;
+	float: left;
+    width: fit-content;
+	position: relative;
+	
+	color: #3b2102;
+	text-shadow: 0px 1px #5e3200be;
+	font-weight: bolder;
+	text-transform: uppercase;
+
+	background-image: url(../media/wood.jpg);
+	background-repeat: repeat;
+
+	border: 1px solid #3f2508;
+	border-radius: 6px;
+
+	padding: 10px 14px;
+	margin-right: 20px;
+	transition: 0.4s;
+}
+.header-contact-btn:hover {
+	color: #301b03;
+	border: 1px solid rgb(0, 0, 0);
+	text-decoration: none;
+	transform: translateY(-5px);
+}
