@@ -9,51 +9,6 @@ footer {
     align-items: center;
 }
 
-.contact-container {
-    padding-top: 60px;
-    padding-bottom: 50px;
-    padding-left: 65px;
-    padding-right: 65px;
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
-}
-
-.logo-static {
-    width: 45px;
-}
-
-.name {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-left: 15px;
-}
-
-.contact-card-item {
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.contact-card-item a {
-    padding: 10px;
-    transition: 0.3s;
-}
-.contact-card-item a:hover {
-    color: white;
-    text-decoration: none;
-    transform: 1.1em;
-}
-
-.contact-icon {
-    width: 25px;
-    margin-right: 25px;
-}
-
-
-
 .copyright {
     font-size: 0.6em;
     width: 100vw;
