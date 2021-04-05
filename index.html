@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="UTF-8"/>
 
 	<!-- Tell IE to use the most current layout engine-->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/> 
 
 	<!-- Responsive site doesn't get zoomed out by mobile phone's browser.-->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
 
 	 <!-- for SEO -->
 	<meta name="description" content="JB's Electrical are professional and reliable electricians,
-	servicing the Rotorua and surrounding areas. You can trust JB's for premium results.">
+	servicing the Rotorua and surrounding areas. You can trust JB's for premium results."/>
 	<!-- avoid stuffing  eg. (website websites)-->
 	<meta name="keywords" content="electrician electrical JBs Rotorua sparky trades houses residential
-	commercial trenching underground inspector bay of plenty">
-	<meta name="author" content="Tasker Solutions">
+	commercial trenching underground inspector bay of plenty"/>
+	<meta name="author" content="Tasker Solutions"/>
 
 	<!-- Facebook sharing crieria. Description helps click through rate and conversions -->
 	<meta property="og:image" content="media/card.jpg" />
@@ -27,63 +27,73 @@
 	<title>JB's Electrical</title>
 	
 	<!-- load google fonts -->
-	<link rel="dns-prefetch" href="//fonts.googleapis.com">
-	<link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com"/>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@300&
+	family=Roboto:wght@300;400;500;700&family=DM+Serif+Text&family=Source+Serif+Pro:wght@400;700&display=swap" rel="stylesheet"/>
 
 	<!-- favicon -->
-	<link rel="shortcut icon" type="image/jpg" href="media/logo/icon.jpg">	
+	<link rel="shortcut icon" type="image/jpg" href="media/logo/icon.jpg"/>	
 	
+
+	<!-- Font Awesome -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
+
+	<!-- Load Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+	<!-- MDB -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css"/>
 
 	<!-- slide in effect -->
-	<link rel="stylesheet" href="css/slide.css">
+	<link rel="stylesheet" href="css/slide.css"/>
 	<!-- parallax effect -->
-	<link rel="stylesheet" href="css/parallax.css">
+	<link rel="stylesheet" href="css/parallax.css"/>
 	<!-- custom styles -->
-	<link rel="stylesheet" href="css/header.css">
-	<link rel="stylesheet" href="css/footer.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css"/>
+	<link rel="stylesheet" href="css/footer.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
 	<!-- custom breakpoints -->
-	<link rel="stylesheet" href="css/mediaqueries.css">
+	<link rel="stylesheet" href="css/mediaqueries.css"/>
 	
-	<!-- Load Bootstrap -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-	
-	<!-- Load htmlshiv and Respond.js for old IE versions so we can use HTML5 elements and media queries -->
-	<!--[if lt IE 9]>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-	<![endif]-->
-
 </head>
 
 <body>
+
+	
 	
 <!-- header/nav bar --> 
-
-
-	<a href="#top" onclick="closeNavMenu()">Home</a>
-	<a href="#services" onclick="closeNavMenu()">Services</a>
-	<a href="#testimonials" onclick="closeNavMenu()">Testimonials</a>
-	<a href="#contact" onclick="closeNavMenu()">Contact</a>                                               
-
-				
-<!-- banner image -->
-<div class="banner-img">
-	<!-- header -->
+<nav class="navbar navbar-expand-md">
 	<div class="container">
-		
-		<div class="page-title">JB's Electrical Ltd</div>
-		<div class="page-subtitle">Trusted by Rotorua and surrounding areas for premium results</div>
+		<!-- brand -->
+		<a class="navbar-brand" href="#top" style="font-family: 'DM Serif Text', serif; text-align: left; line-height: 1;">
+			<img src="media/logo/logo-grey.png" alt="Logo" class="logo-image">
+			<div class="flex-container-start logo-text">
+				<div>JB's</div>
+				<div style="font-size: 0.5em;">ELECTRICAL<br>CONTRACTORS</div>
+			</div>
+		</a>
+		<!-- Toggler/collapsibe Button -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<div class="animated-icon"><span></span><span></span><span></span></div>
+		</button>
+		<!-- Navbar links -->
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<ul class="navbar-nav ms-auto">
+			<li class="nav-item"><a class="nav-link" href="#top">Home</a></li>
+			<li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+			<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+			</ul>
+		</div>
 	</div>
-</div>
+</nav>
 
-<div class="container" id="about">
-	<div class="content-container">
+<!-- main content -->
+<div class="container">
+	
+	<!-- page title -->
+	<div class="page-title">JB's Electrical</div>
+	<div class="page-subtitle">Trusted by Rotorua and surrounding areas for premium results</div>
 
-	<!-- about -->
+	<!-- about us -->
 	<div class="">
 		JB’s Electrical Ltd started back in 1987 and over the years has earned a superb reputation.
 		<br><br>
@@ -92,103 +102,69 @@
 		JB's employs competent, hard working staff, use the highest quality materials, and always deliver on time.<br>
 		Our Electrical Inspector ensures work is completed to the highest standard.
 	</div>
-	
-	<hr>
 
-	<!-- about -->
+	<!-- services -->
 	<div class="heading" id="services">
 		We specialise in Trenching & Underground Services.
 		We also provide residential, commercial and industrial electrical services.<br>
-
-		
 	</div>	
 
-	<hr>
-
 	<!-- services --->
-	<div class="flex-container-center margin-bottom-30px">
-		
-		<div class="flex-container-start flex-item dotted-grey-bottom-border" id="trenching-div">
-
+	<div class="">		
+		<div class="flex-container-start flex-item dotted-grey-bottom-border" id="trenching-div"></div>
 			<div class="column-img"><img src="media/trenching.jpg" alt="Trenching"></div>
-			
 			<div class="column-text">
-				<div class="column-header">Trenching & Underground</div>
-							
+				<div class="column-header">Trenching & Underground</div>		
 				<div class="trenching-text closed">
 					Trenching and underground services are our specialty. <br><br>
-					We offer overhead to underground conversions,
-					power to new dwellings, trenching for combined services
-					(eg water, gas, phone, fibre etc,) and cable repair.
-					We have a trencher which can dig trenches up to
+					We offer overhead to underground conversions, power to new dwellings,
+					trenching for combined services	(eg water, gas, phone, fibre etc,)
+					and cable repair. We have a trencher which can dig trenches up to
 					several Kilometres if required.
 				</div>
-
-				<div class="read-more-btn-container">
-					<!-- add enquire button? that links to contact form?-->
-					<btn class="btn read-more-btn" id="trenching-btn" onclick="showMore('trenching')">
-						Read more</btn>
-				</div>
-
+				<button class="btn read-more-btn" id="residential-btn">Read more</button>
 			</div>
 		</div> 
 		
 		<div class="flex-container-start flex-item dotted-grey-bottom-border" id="commercial-div">
-			
-			<div class="column-img">
-				<img src="media/commercial.jpg" alt="Commercial">
-			</div>
-
+			<div class="column-img"><img src="media/commercial.jpg" alt="Commercial"></div>
 			<div class="column-text">
 				<div class="column-header">Commercial & Industrial</div>
-
 				<div class="commercial-text closed">
-					We are available for office or shop fit outs,
-					lighting upgrades, switchboard upgrades,
-					power cabling, data cabling, testing and tagging,
-					fault finding, security/emergency/exit lighting,
-					repairs and more.  With our own Electrical Inspector,
-					we can complete the whole process.
+					We are available for office or shop fit outs, lighting upgrades,
+					switchboard upgrades, power cabling, data cabling, testing and tagging,
+					fault finding, security/emergency/exit lighting, repairs and more. 
+					With our own Electrical Inspector, we can complete the whole process.
 					<br><br>
 					Specialised services are available for new industrial
 					project installations or maintenance.
 				</div>
-
-				<div class="read-more-btn-container">
-					<div class="btn read-more-btn" id="commercial-btn" onclick="showMore('commercial')">
-						Read more</div>
-				</div>
+				<button class="btn read-more-btn" id="residential-btn">Read more</button>
 			</div>
 		</div>
 		
 		<div class="flex-container-start flex-item dotted-grey-bottom-border" id="residential-div">
-			
-			<div class="column-img">
-				<img src="media/residential.jpg" alt="Residential">
-			</div>
-
+			<div class="column-img"><img src="media/residential.jpg" alt="Residential"></div>
 			<div class="column-text">
 				<div class="column-header">Residential</div>
-
 				<div class="residential-text closed">
 					We can assist you with new homes, renovations, alterations, maintenance
 					or projects such as	indoor or outdoor lighting upgrades, underfloor heating,
 					switchboard replacements or any other household requirements. We can work
 					with your plans or are happy to	offer advice based on our years of experience.
 				</div>
-
-				<div class="read-more-btn-container">
-					<div class="btn read-more-btn" id="residential-btn" onclick="showMore('residential')">
-						Read more</div>
-				</div>
+				<button class="btn read-more-btn" id="residential-btn">Read more</button>
 			</div>
 		</div>
 	</div> 
 		
+						
+</div> 
+<!-- end main content container -->
 
+	
+<footer>
 
-
-		
 	<div class="flex-container-center company-card">
 		<a class="company-card-item  margin-top-20px">
 			<span class="company-card-icon"><span class="clock-icon"></span></span>
@@ -211,18 +187,27 @@
 			<span class="company-card-text"><div>jbelectrical@xtra.co.nz</div></span>
 		</a>
 	</div>
-						
-</div> 
-<!-- end content container background -->
 
-	
-<footer>
-	<div>Copyright &copy; 2020 | JB's Electrical Rotorua | Website developed by
+	<div class="copyright">Copyright &copy; 2020 | JB's Electrical Rotorua | Website developed by&nbsp;
 		<a href="http://taskersolutions.co.nz/" target="_blank">Tasker Solutions</a>
 	</div>
 </footer>
 
-<!-- scripts -->
+<!-- bootstrap scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- MDB -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"></script>
+
+<!-- Load htmlshiv and Respond.js for old IE versions so we can use HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- local scripts -->
+<script src="script/parallax.js"></script>
 <script src="script/header.js"></script>
 <script src="script/slide-modules.js"></script>
 <script src="script/script.js"></script>
