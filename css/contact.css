@@ -1,0 +1,39 @@
+.contact-div {
+	text-align: left;
+	background-color: #131313; 
+}
+
+
+
+/* --- company card --- */
+.contact-item {
+	margin: auto;
+    padding: 40px;
+}
+
+.company-card-item {
+	background: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-top: 20px;
+	padding-bottom: 20px;
+	width: 100%;
+	position: relative;
+	border-style: dotted;
+	border-color: grey;
+	border-width: 0px 0px 1px 0px;
+}
+
+.company-card-icon {
+	display: flex;
+    height: 2.25rem;
+	padding-right: 1.25rem;
+    text-align: center;
+    width: 3.5rem;
+}
+
+.company-card-text {
+	vertical-align: middle;
+    text-align: left;
+}

@@ -1,36 +1,38 @@
 .navbar {
 	background-color: #181818;
-	
-}
-
-.navbar-brand, .nav-link {
-	color: #D9D9D9;
-	transition: 0.3s;
-}
-
-.navbar-brand:hover, .nav-link:hover {
-	color: #919191;
-}
-
-.logo-image {
-	width: 100px;
-	transition: 0.8s;
-}
-.logo-text {
-	margin-left: 15px;
-	font-size: 1.4em;
 }
 
 .navbar-brand {
+	color: #D9D9D9;
+	font-family: 'DM Serif Text', serif;
+	text-align: left;
+	line-height: 1;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	padding-left: 10px;
 }
+.brand-image {
+	width: 100px;
+	transition: 0.8s;
+}
+.brand-text {
+	margin-left: 15px;
+	font-size: 1.4em;
+}
 
 .nav-link {
+	color: #D9D9D9;
+	transition: 0.3s;
 	font-size: 1.3em;
-	margin: 5px;
+	padding: 10px;
+	margin-right: 30px;
 	text-align: left;
+}
+.nav-link:hover {
+	color: #919191;
+}
+.nav-link :last-child {
+	margin-right: 0px;
 }
 
 

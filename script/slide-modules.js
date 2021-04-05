@@ -16,7 +16,7 @@
 
 var win = $(window);
 
-var allMods = $(".slide");
+var allMods = $(".slide-in");
 
 //Already visible slide modules
 allMods.each(function(i, el) {

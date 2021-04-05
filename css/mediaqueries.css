@@ -3,26 +3,24 @@
 /* --------------- 480px (bigger than portrait phone) --------------- */
 @media only screen and (min-width: 480px) {
 	body { font-size: 15px;	}
-	.logo-image { width: 120px; }
-	.logo-text { font-size: 1.6em; }
+
 }
 
 /* --------------- 620px (bigger than phone) --------------- */
 @media only screen and (min-width: 620px) {	
-
 }
 
 /* --------------- 768px (Tablets) --------------- */
 @media only screen and (min-width: 768px) {
 	body { font-size: 16px;	}
-
-	.logo-image { width: 140px; }
-	.logo-text { font-size: 1.8em; }
 }
 
 /* --------------- 992px (laptops) --------------- */
 @media only screen and (min-width: 992px) {
 	body { font-size: 17px;	}
+
+	.brand-image { width: 120px; }
+	.brand-text { font-size: 1.6em; }
 	
 
 }

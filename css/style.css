@@ -1,29 +1,19 @@
 * {	margin: 0px; padding: 0px; box-sizing: border-box;} /* so all browsers display same */
-html {height: 100%;	scroll-behavior: smooth; }
-a { color: black; text-decoration: none; }
-a:hover { color: black; text-decoration: none; }
+html { scroll-behavior: smooth; }
+a { color: #D9D9D9; text-decoration: none; }
+a:hover { color: #D9D9D9; text-decoration: none; }
+body { overflow-x: hidden; text-align: center; background-color: #1d1d1d;	color: #D9D9D9;}
 
-body {
-	overflow-x: hidden;
-	height: 100%;
-	text-align: center;
-	background-color: #E0E1DD;
-	color: #000000;
-}
-
-.page-title { 
-	padding-top: 200px;
-	font-size: 4em;
-	margin-bottom: 50px;
-	font-weight: bold;
+.title-block {
+	background-color: #131313;
+	padding-top: 50px;
+	padding-bottom: 50px;
 	font-family: 'DM Serif Text', serif;
 }
+.page-title { font-size: 4em; }
+.page-subtitle { font-size: 1.8em;	margin-top: 30px;}
 
-.page-subtitle { 
-	font-size: 1.6em;
-	margin-bottom: 20px;
-	font-weight: normal;
-}
+
 
 .heading {
 	padding-top: 65px;
@@ -31,3 +21,17 @@ body {
 	font-size: 2.3em;
 }
 
+
+
+
+
+
+#title-carousel {
+	max-height: 400px;
+	overflow: hidden;
+}
+
+.carousel-inner img {
+	width: 100%;
+	height: 100%;
+}
