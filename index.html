@@ -40,12 +40,12 @@
 
 	<!-- Load Bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
-	<!-- MDB -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css"/>
+	<!-- Material Design Bootstrap -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
 
-	<!-- slide in effect -->
+	<!--  -->
 	<link rel="stylesheet" href="css/come-in.css"/>
-	<!-- parallax effect -->
+	<link rel="stylesheet" href="css/mobile-nav-overlay.css"/>
 	<link rel="stylesheet" href="css/parallax.css"/>
 	<!-- custom styles -->
 	<link rel="stylesheet" href="css/header.css"/>
@@ -59,23 +59,24 @@
 <body>
 
 <!-- header/nav bar --> 
-<nav class="navbar navbar-expand-md">
+<div class="overlay"></div>
+<nav class="navbar navbar-expand-md" id="myNav">
 <div class="container">
 	<!-- brand -->
 	<a class="navbar-brand" href="#top">
 		<img src="media/logo/logo-grey.png" alt="Logo" class="brand-image">
 		<div class="flex-container-start brand-text">
 			<div>JB's</div>
-			<div style="font-size: 0.5em;">ELECTRICAL<br>CONTRACTORS</div>
+			<div style="font-size: 0.5em; text-transform: uppercase;">Electrical<br>Contractors</div>
 		</div>
 	</a>
 	<!-- Toggler/collapsibe Button -->
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" id="navbar-toggler">
 		<div class="animated-icon"><span></span><span></span><span></span></div>
 	</button>
 	<!-- Navbar links -->
-	<div class="collapse navbar-collapse" id="collapsibleNavbar">
-		<ul class="navbar-nav ms-auto">
+	<div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+		<ul class="navbar-nav">
 			<li class="nav-item"><a class="nav-link" href="#top">Home</a></li>
 			<li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
 			<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
@@ -105,15 +106,10 @@
 </div>
 
 <!-- about us -->
-<div class="container" style="margin-top: 60px; margin-bottom: 60px;">
-	JB’s Electrical started back in 1987 and over the years has earned a superb reputation.
-	<br><br>
-	With over 30 years of experience, we are committed to providing the Rotorua and
-	Bay of Plenty region with professional, honest and reliable service.
-	<br><br>
-	We employ switched on, hard working staff. Our team always gets the job done on time.
-	<br><br>
-	We use excellent quality materials and our electrical inspector ensures work is completed to the highest standard.
+<div class="container" style="margin-bottom: 80px;">
+	JB’s Electrical was founded by Bruce Smith in 1987.<br>
+	Bruce and his team have earned a reputation	for providing
+	professional, honest and reliable service.
 </div> 
 
 <!-- contact div -->
@@ -121,50 +117,24 @@
 <div class="container">
 <div class="row">
 	<!-- services -->
-	<div class="col-lg-4 flex-container-center contact-item">
-		Services<br>
-		Trenching & Underground services<br>
-		Residential<br>
-		Commercial<br>
-		Industrial<br>
-		Electrical inspections<br>
-		<button class="btn" type="button">Find out more</button>
+	<div class="col-md-6 flex-container-center contact-item" style="line-height: 2;">
+		<h3 class="heading"><a href="services.html">Our Services</a></h3>
+		Trenching & Underground<br>
+		Residential & Installations<br>
+		Commercial & Industrial<br>
+		Electrical inspections<br><br>
+		<button class="btn btn-light" type="button">Find out more</button>
 	</div>
 
 	<!-- contact info -->
-	<div class="col-lg-4 flex-container-center contact-item">
-		<a class="company-card-item">
-			<div class="company-card-icon"><img src="media/icons/white_clock_icon.png" alt="clock"></div>
-			<div class="company-card-text">8am - 5pm Weekdays</div>
-		</a>
-		<a href="tel:+64274740205" class="company-card-item">
-			<div class="company-card-icon"><img  src="media/icons/white_phone_icon.png" alt="phone"></div>
-			<div class="company-card-text">027 474 0205</div>
-		</a>
-		<a href="mailto:jbelectrical@xtra.co.nz" class="company-card-item">
-			<div class="company-card-icon"><img  src="media/icons/white_email_icon.png" alt="email"></div>
-			<div class="company-card-text">jbelectrical@xtra.co.nz</div>
-		</a>
+	<div class="col-md-6 flex-container-center contact-item">
+		<h3 class="heading"><a href="contact.php" class="link-padding">Contact us</a></h3>
+		<div  class="company-card-item"><a href="tel:+64274740205" class="link-padding">Call: 027 474 0205</a></div>
+		<div  class="company-card-item"><a href="mailto:jbelectrical@xtra.co.nz" class="link-padding">Email: jbelectrical@xtra.co.nz</a></div>
+		<div  class="company-card-item"><a href="contact.php" class="btn btn-light">Send us a message</a></div>
 	</div>
 	
-	<!-- contact form -->
-	<div class="col-lg-4 flex-container-center contact-item">
-		<form method="post" action="<?php htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-			<div class="form-group">
-				<label for="email">Your email address <span class="red">*</span></label>
-				<input type="email" class="form-control" name="email" id="email">
-			</div>
-			<div class="form-group">
-				<label for="phone">Your phone number</label>
-				<input type="phone" class="form-control" name="phone" id="phone">
-			</div>
-			<div class="form-group">
-				<label for="message">Your message:  <span class="red">*</span></label>
-				<textarea class="form-control" rows="5" name="message" id="message"></textarea>
-				</div>
-				<button type="submit" class="btn" name="send-message" id="send-message">Send message</button>
-		</form>
-	</div>
+
 
 </div>
 </div>
@@ -173,16 +143,22 @@
 
 
 <footer>
-	Copyright &copy; 2020 | JB's Electrical Rotorua | Website by&nbsp;
-	<a href="http://taskersolutions.co.nz/" target="_blank">Tasker Solutions</a>
+<div class="container">
+<div class="row">
+	<div class="copyright col-sm-6">Copyright &copy; 2020 | JB's Electrical Rotorua</div>
+	<div class="credit col-sm-6">Website by&nbsp;
+		<a href="http://taskersolutions.co.nz/" target="_blank">Tasker Solutions</a>
+	</div>
+</div>
+</div>
 </footer>
 
 <!-- bootstrap scripts -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<!-- MDB -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
 
 <!-- Load htmlshiv and Respond.js for old IE versions so we can use HTML5 elements and media queries -->
 <!--[if lt IE 9]>
