@@ -22,7 +22,7 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://taskersolutions.co.nz/jbselectrical/jb2/index.html" />
 	<meta property="og:description" content="JB's Electrical are professional and reliable electricians,
-	servicing the Rotorua and surrounding areas. You can trust JB's for premium results." />
+	servicing Rotorua and surrounding areas. You can trust JB's for premium results." />
 	
 	<title>JB's Electrical</title>
 	
