@@ -81,6 +81,27 @@
 
 <body>
 
+<!-- Confirmation modal - opens when user submits form -->
+<div class="modal fade" id="confirmation-modal" style="color: black;">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content">
+	<!-- Modal Header -->
+	<div class="modal-header">
+		<h4 class="modal-title mx-auto">Thank you for your message!</h4>
+	</div>
+	<!-- Modal body -->
+	<div class="modal-body">
+		You will receive a confirmation email with a copy of your message.
+		<br><br>
+		We will be in touch shortly to discuss your enquiry.
+	</div>
+	<!-- Modal footer -->
+	<div class="modal-footer">
+		<button class="btn btn-primary mx-auto" data-dismiss="modal">close</button>
+	</div>
+</div>
+</div>
+</div>
 
 <?php 
 $name = $email = $phone = $message = "" ;
@@ -88,24 +109,13 @@ $formValid = true;
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-	if (empty($_POST['name'])) {
-		$formValid = false;
-	} else {
-		$name = test_input($_POST['name']);
-	}
-	if (empty($_POST['email'])) {
-		$formValid = false;
-	} else {
-		$email = test_input($_POST['email']);
-	}
-	if (!empty($_POST['phone'])) {
-		$phone = test_input($_POST['phone']);
-	}
-	if (empty($_POST['message'])) {
-		$formValid = false;
-	} else {
-		$message = test_input($_POST['message']);
-	}
+	if (empty($_POST['name'])) { $formValid = false; }
+	else { $name = test_input($_POST['name']); }
+	if (empty($_POST['email'])) { $formValid = false; }
+	else { $email = test_input($_POST['email']); }
+	if (!empty($_POST['phone'])) { $phone = test_input($_POST['phone']); }
+	if (empty($_POST['message'])) { $formValid = false; }
+	else { $message = test_input($_POST['message']); }
 
 	$to = "harry.taskersolutions@gmail.com";
 
@@ -133,7 +143,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	} else {
 		echo '<script>alert("\n Your message failed to send. \n\n Please try again.");</script>';
 	}
-
 }
 
 function test_input($data) {
@@ -143,28 +152,6 @@ function test_input($data) {
 	return $data;
 }
 ?>
-
-<!-- Confirmation modal - opens when user submits form -->
-<div class="modal fade" id="confirmation-modal" style="color: black;">
-<div class="modal-dialog modal-dialog-centered">
-<div class="modal-content">
-	<!-- Modal Header -->
-	<div class="modal-header">
-		<h4 class="modal-title mx-auto">Thank you for your message!</h4>
-	</div>
-	<!-- Modal body -->
-	<div class="modal-body">
-		A confirmation email has been send to <?php echo $email ; ?>
-		<br><br>
-		We will be in touch shortly to discuss your enquiry.
-	</div>
-	<!-- Modal footer -->
-	<div class="modal-footer">
-		<button class="btn btn-primary mx-auto">close</button>
-	</div>
-</div>
-</div>
-</div>
 
 
 <!-- header/nav bar --> 
@@ -195,11 +182,11 @@ function test_input($data) {
 </nav>
 
 <div id="title-carousel" class="carousel slide carousel-fade"
-data-ride="carousel" data-interval="5000" style="max-height: 260px;">
+data-ride="carousel" data-interval="5000" style="max-height: 360px;">
 	<!-- The slideshow -->
 	<div class="carousel-inner">
 	  	<div class="carousel-item active">
-			<img src="media/background/background-3.jpg" alt="">
+			<img src="media/background/bg7.jpg" alt="">
 	 	</div>
 	</div>
 
@@ -243,7 +230,7 @@ class="needs-validation" novalidate style="max-width: 600px; margin: auto;">
 		<textarea class="form-control" rows="6" name="message" id="message" required></textarea>
 		<div class="invalid-feedback">Please fill out this field.</div>
 	</div>
-	<button class="btn custom-btn" type="submit" name="submit" id="submit">Send message</button>
+	<button class="btn btn-primary" type="submit" name="submit" id="submit">Send message</button>
 </form>
 </div>
 
