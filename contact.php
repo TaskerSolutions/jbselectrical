@@ -52,7 +52,7 @@
 	<!-- custom styles -->
 	<link rel="stylesheet" href="css/custom-btn.css"/>
 	<link rel="stylesheet" href="css/carousel.css"/>
-	<link rel="stylesheet" href="css/header.css"/>
+	<link rel="stylesheet" href="css/header.css?v=2"/>
 	<link rel="stylesheet" href="css/content.css"/>
 	<link rel="stylesheet" href="css/footer.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
@@ -163,7 +163,7 @@ function test_input($data) {
 		<img src="media/logo/logo-grey.png" alt="Logo" class="brand-image">
 		<div class="flex-container-start brand-text">
 			<div>JB's</div>
-			<div style="font-size: 0.5em; text-transform: uppercase;">Electrical<br>Contractors</div>
+			<div style="font-size: 0.5em; text-transform: uppercase;">Electrical<br>Contractors Ltd</div>
 		</div>
 	</a>
 	<!-- Toggler/collapsibe Button -->
@@ -195,7 +195,7 @@ data-ride="carousel" data-interval="5000" style="max-height: 360px;">
 		<img src="media/logo/logo-grey.png" alt="Logo" class="carousel-overlay-image">
 		<div class="carousel-overlay-text">
 			<div>JB's</div>
-			<div style="font-size: 0.5em; text-transform: uppercase;">Electrical<br>Contractors</div>
+			<div style="font-size: 0.5em; text-transform: uppercase;">Electrical<br>Contractors Ltd</div>
 		</div>
 	</div>
 </div>
@@ -237,7 +237,7 @@ class="needs-validation" novalidate style="max-width: 600px; margin: auto;">
 </div>
 
 <!-- content div -->
-<div class="content-div" style="font-size: 1.2em; padding-bottom: 80px;">
+<div class="content-div" style="font-size: 1.2em; padding-top: 60px; padding-bottom: 60px;">
 <div class="container">
 
 	<div class="contact-item">
@@ -264,7 +264,7 @@ class="needs-validation" novalidate style="max-width: 600px; margin: auto;">
 		<span style="font-weight: bold;">Opening Hours</span>
 		<br>
 		8am - 5pm Weekdays<br>
-		Excluding public holidays & christmas break
+		Excluding public holidays & Christmas/New year break
 	</div>
 
 	<div class="contact-item">
@@ -273,10 +273,10 @@ class="needs-validation" novalidate style="max-width: 600px; margin: auto;">
 		53 Vaughan Road, Ngapuna, Rotorua 3010<br>
 		Our office is usually unatended. Please call us to get in touch.
 	</div>
-
+	<!--
 	<iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d3137.8176149834076!2d176.2750314!3d-38.1444337!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x6d6e9c4cd4c1c27f%3A0x473f6d5b010b9718!2sJ%20B&#39;s%20Electrical%2053%20Vaughan%20Road%2C%20Ngapuna%2C%20Rotorua%203010!3m2!1d-38.1444337!2d176.2772201!5e0!3m2!1sen!2snz!4v1617757416746!5m2!1sen!2snz"
 	style="border:0; width: 100%; height: 300px; max-width: 500px;" allowfullscreen="" loading="lazy"></iframe>
-
+	-->
 </div>
 </div>
 	
@@ -287,7 +287,7 @@ class="needs-validation" novalidate style="max-width: 600px; margin: auto;">
 <footer>
 	<div class="container">
 	<div class="row">
-		<div class="copyright col-sm-6">Copyright &copy; 2020 | JB's Electrical Rotorua</div>
+		<div class="copyright col-sm-6">Copyright &copy; 2020 | JB's Electrical Contractors Ltd</div>
 		<div class="credit col-sm-6">Website by&nbsp;
 			<a href="http://taskersolutions.co.nz/" target="_blank">Tasker Solutions</a>
 		</div>
