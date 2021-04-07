@@ -60,14 +60,78 @@
 	<link rel="stylesheet" href="css/mediaqueries.css"/>
 
 	<style>
-		.contact-item {
-			margin-bottom: 50px;
-		}
+		.form-group { margin-bottom: 25px; }
+		.contact-item {	margin-bottom: 50px; }
+		label { font-size: 1.1em }
 	</style>
 	
 </head>
 
 <body>
+
+
+<?php 
+$name = $email = $phone = $message = "" ;
+$formValid = true;
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+	if (empty($_POST['name'])) {
+		$formValid = false;
+	} else {
+		$email = test_input($_POST['name']);
+	}
+	if (empty($_POST['email'])) {
+		$formValid = false;
+	} else {
+		$email = test_input($_POST['email']);
+	}
+	if (!empty($_POST['phone'])) {
+		$phone = test_input($_POST['phone']);
+	}
+	if (empty($_POST['message'])) {
+		$formValid = false;
+	} else {
+		$message = test_input($_POST['message']);
+	}
+
+	$to = "harry.taskersolutions@gmail.com";
+
+	$myMessage = 
+		"Name: " . $name . "\n\n" .
+		"Email: " . $email . "\n\n" . 
+		"Phone: " . $phone . "\n\n" . 
+		"Message: " . $message;
+
+	$customerMessage =
+		"Thank you for getting in touch. \n\n" .
+		"We will get back to you as soon as possible.\n\n" .
+		"Your name: " . $name . "\n\n" .
+		"Your email: " . $email . "\n\n" .
+		"Your phone: " . $phone . "\n\n" .
+		"Your message: " . $message ;
+
+	$headers = "From: " . $email ;
+	$headers2 = "From: " . $to ;
+
+	if ($formValid) {
+		mail($to , "Website Message" , $myMessage , $headers);
+		mail($email , "Thank you for your message" , $customerMessage , $headers2); // sends a copy of the message to the sender
+		
+		echo '<script>alert("\n Thank you for your message! \n\n A confirmation email has been sent to ' . $email . '\n\n We will get back to you as soon as possible.");</script>';	
+	} else {
+		echo '<script>alert("\n Your message failed to send. \n\n Please try again.");</script>';
+	}
+	// You can also use header('Location: thank_you.php'); to redirect to another page.
+}
+
+function test_input($data) {
+	$data = trim($data);
+	$data = stripslashes($data);
+	$data = htmlspecialchars($data);
+	return $data;
+}
+?>
 
 <!-- header/nav bar --> 
 <div class="nav-overlay"></div>
@@ -118,15 +182,41 @@ data-ride="carousel" data-interval="5000" style="max-height: 260px;">
 
 <!-- main content -->
 <div class="container">
-	<!-- page title -->
-	<h1 style="margin-top: 80px; margin-bottom: 80px;">Contact us</h1>	
-	
+<!-- page title -->
+<h1 style="margin-top: 80px; margin-bottom: 80px;">Contact us</h1>	
 
+<!-- bootstrap contact form -->
+<div class="slide" style="margin-bottom: 80px;">
+<form method="post" action="<?php htmlspecialchars($_SERVER["PHP_SELF"]);?>"
+class="needs-validation" novalidate style="max-width: 600px; margin: auto;">
+	<div class="form-group">
+		<label for="name">Your name</label>
+		<input type="name" class="form-control" name="name" id="name" required>
+		<div class="invalid-feedback">Please fill out this field.</div>
+	</div>
+	<div class="form-group">
+		<label for="email">Your email address</label>
+		<input type="email" class="form-control" name="email" id="email" required>
+		<div class="invalid-feedback">Please fill out this field.</div>
+	</div>
+	<div class="form-group">
+		<label for="phone">Your phone number</label>
+		<input type="phone" class="form-control" name="phone" id="phone" required>
+		<div class="invalid-feedback">Please fill out this field.</div>
+	</div>
+	<div class="form-group">
+		<label for="message">Your message</label>
+		<textarea class="form-control" rows="6" name="message" id="message" required></textarea>
+		<div class="invalid-feedback">Please fill out this field.</div>
+	</div>
+	<button class="btn custom-btn" type="submit" name="submit" id="submit">Send message</button>
+</form>
+</div>
 
 </div>
 
 <!-- content div -->
-<div class="content-div" style="font-size: 1.2em;">
+<div class="content-div" style="font-size: 1.2em; padding-bottom: 80px;">
 <div class="container">
 
 	<div class="contact-item">
@@ -201,6 +291,7 @@ data-ride="carousel" data-interval="5000" style="max-height: 260px;">
 	<script src="script/parallax.js"></script>
 	<script src="script/slide-modules.js"></script>
 	<script src="script/nav-bar.js"></script>
+	<script src="script/form-validation.js"></script>
 
 </body>
 </html>
