@@ -40,164 +40,167 @@
 
 	<!-- Load Bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
-	<!-- MDB -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css"/>
+	<!-- Material Design Bootstrap -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
 
-	<!-- slide in effect -->
+	<!--  -->
 	<link rel="stylesheet" href="css/come-in.css"/>
-	<!-- parallax effect -->
+	<link rel="stylesheet" href="css/nav-icon.css"/>
+	<link rel="stylesheet" href="css/mobile-nav-overlay.css"/>
 	<link rel="stylesheet" href="css/parallax.css"/>
+	
 	<!-- custom styles -->
+	<link rel="stylesheet" href="css/custom-btn.css"/>
+	<link rel="stylesheet" href="css/carousel.css"/>
 	<link rel="stylesheet" href="css/header.css"/>
+	<link rel="stylesheet" href="css/content.css"/>
 	<link rel="stylesheet" href="css/footer.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
 	<!-- custom breakpoints -->
 	<link rel="stylesheet" href="css/mediaqueries.css"/>
+
+	<style>
+		.contact-item {
+			margin-bottom: 50px;
+		}
+	</style>
 	
 </head>
 
 <body>
 
-	
-	
 <!-- header/nav bar --> 
-<nav class="navbar navbar-expand-md">
-	<div class="container">
-		<!-- brand -->
-		<a class="navbar-brand" href="#top">
-			<img src="media/logo/logo-grey.png" alt="Logo" class="brand-image">
-			<div class="flex-container-start brand-text">
-				<div>JB's</div>
-				<div style="font-size: 0.5em;">ELECTRICAL<br>CONTRACTORS</div>
-			</div>
-		</a>
-		<!-- Toggler/collapsibe Button -->
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-			<div class="animated-icon"><span></span><span></span><span></span></div>
-		</button>
-		<!-- Navbar links -->
-		<div class="collapse navbar-collapse" id="collapsibleNavbar">
-			<ul class="navbar-nav ms-auto">
-			<li class="nav-item"><a class="nav-link" href="#top">Home</a></li>
-			<li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-			<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-			</ul>
+<div class="nav-overlay"></div>
+<nav class="navbar navbar-expand-md" id="myNav">
+<div class="container">
+	<!-- brand -->
+	<a class="navbar-brand" href="index.html">
+		<img src="media/logo/logo-grey.png" alt="Logo" class="brand-image">
+		<div class="flex-container-start brand-text">
+			<div>JB's</div>
+			<div style="font-size: 0.5em; text-transform: uppercase;">Electrical<br>Contractors</div>
 		</div>
+	</a>
+	<!-- Toggler/collapsibe Button -->
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" id="navbar-toggler">
+		<div class="animated-icon"><span></span><span></span><span></span></div>
+	</button>
+	<!-- Navbar links -->
+	<div class="collapse navbar-collapse" id="collapsibleNavbar">
+		<ul class="navbar-nav mx-auto">
+			<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+			<li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+			<li class="nav-item"><a class="nav-link" href="#top">Contact</a></li>
+		</ul>
 	</div>
+</div>
 </nav>
 
-<!-- contact form -->
-<div class="col-lg-4 flex-container-center contact-item">
-	<!--<form method="post" action="<?php htmlspecialchars($_SERVER["PHP_SELF"]);?>">-->
-		<h3 class="heading">Send us a message</h3>
-		<div class="form-group">
-			<label for="email">Your email address <span class="red">*</span></label>
-			<input type="email" class="form-control" name="email" id="email">
-		</div>
-		<div class="form-group">
-			<label for="phone">Your phone number</label>
-			<input type="phone" class="form-control" name="phone" id="phone">
-		</div>
-		<div class="form-group">
-			<label for="message">Your message:  <span class="red">*</span></label>
-			<textarea class="form-control" rows="5" name="message" id="message"></textarea>
-			</div>
-			<button type="submit" class="btn btn-primary" name="send-message" id="send-message">Send message</button>
-	</form>
-</div>
+<div id="title-carousel" class="carousel slide carousel-fade"
+data-ride="carousel" data-interval="5000" style="max-height: 260px;">
+	<!-- The slideshow -->
+	<div class="carousel-inner">
+	  	<div class="carousel-item active">
+			<img src="media/background/background-3.jpg" alt="">
+	 	</div>
+	</div>
 
-<!-- page title -->
-<div class="title-block">
-	<div class="container">
-		<h1 class="page-title">JB's Electrical</h1>
-		<h2 class="page-subtitle">Trusted by Rotorua for premium results</h2>
+	<!-- brand overlay -->
+	<div class="carousel-overlay">
+		<img src="media/logo/logo-grey.png" alt="Logo" class="carousel-overlay-image">
+		<div class="carousel-overlay-text">
+			<div>JB's</div>
+			<div style="font-size: 0.5em; text-transform: uppercase;">Electrical<br>Contractors</div>
+		</div>
 	</div>
 </div>
+
 
 <!-- main content -->
 <div class="container">
+	<!-- page title -->
+	<h1 style="margin-top: 80px; margin-bottom: 80px;">Contact us</h1>	
 	
-	<!-- about us -->
-	<div class="" style="margin-top: 60px;">
-		JB’s Electrical started back in 1987 and over the years has earned a superb reputation.
-		<br><br>
-		With over 30 years of experience, we are committed to providing the Rotorua and
-		Bay of Plenty region with professional, honest and reliable service.
-		<br><br>
-		We employ switched on, hard working staff. Our team always gets the job done on time.
-		<br><br>
-		We use excellent quality materials and our electrical inspector ensures work is completed to the highest standard.
-	</div>
 
-	<!-- services -->
-	<div class="row" id="services" style="margin-top: 100px;">
-		<div class="flex-container-center">
-			<img src="media/services/trenching.jpg" alt="trenching"><br>
-			We specialise in Trenching & Underground services<br>
-			<button class="btn" type="button">Find out more</button>
-		</div>
-		
 
+</div>
+
+<!-- content div -->
+<div class="content-div" style="font-size: 1.2em;">
+<div class="container">
+
+	<div class="contact-item">
+		<span style="font-weight: bold;">Phone</span>
 		<br>
-		Residential<br>
-		Commercial<br>
-		Industrial<br>
-		Electrical inspections<br>
-		
-	</div>			
-						
-</div> 
-<!-- end main content container -->
-
+		<a href="tel:+64274740205" class="link-padding">
+			027 474 0205</a>
+	</div>
 	
+	<div class="contact-item">
+		<span style="font-weight: bold;">Email</span>
+		<br>
+		<a href="mailto:jbelectrical@xtra.co.nz" class="link-padding">
+			jbelectrical@xtra.co.nz</a>
+	</div>
+
+	<div class="contact-item">
+		<span style="font-weight: bold;">Fax</span>
+		<br>
+		07 345 6908
+	</div>
+
+	<div class="contact-item">
+		<span style="font-weight: bold;">Opening Hours</span>
+		<br>
+		8am - 5pm Weekdays<br>
+		Excluding public holidays & christmas break
+	</div>
+
+	<div class="contact-item">
+		<span style="font-weight: bold;">Location</span>
+		<br>
+		53 Vaughan Road, Ngapuna, Rotorua 3010<br>
+		Our office is usually unatended. Please call us to get in touch.
+	</div>
+
+	<iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d3137.8176149834076!2d176.2750314!3d-38.1444337!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x6d6e9c4cd4c1c27f%3A0x473f6d5b010b9718!2sJ%20B&#39;s%20Electrical%2053%20Vaughan%20Road%2C%20Ngapuna%2C%20Rotorua%203010!3m2!1d-38.1444337!2d176.2772201!5e0!3m2!1sen!2snz!4v1617757416746!5m2!1sen!2snz"
+	style="border:0; width: 100%; height: 300px; max-width: 500px;" allowfullscreen="" loading="lazy"></iframe>
+
+</div>
+</div>
+	
+
+
+
+
 <footer>
-
-	<div class="flex-container-center company-card">
-		<a class="company-card-item  margin-top-20px">
-			<span class="company-card-icon"><span class="clock-icon"></span></span>
-			<span class="company-card-text"><div>8am - 5pm Weekdays</div></span>
-		</a>
-		<a href="tel:+6473456908" class="company-card-item">
-			<span class="company-card-icon"><span class="fax-icon"></span></span>
-			<span class="company-card-text"><div>Fax: 07 345 6908</div></span>
-		</a>
-		<a class="company-card-item" target="_blank" href="https://www.google.com/maps/dir//J+B's+Electrical+53+Vaughan+Road,+Ngapuna,+Rotorua+3010/@-38.1444337,176.2750314,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x6d6e9c4cd4c1c27f:0x473f6d5b010b9718!2m2!1d176.2772201!2d-38.1444337!3e0">
-			<span class="company-card-icon"><span class="location-icon"></span></span>
-			<span class="company-card-text">53 Vaughan Road, Ngapuna, Rotorua 3010</span>
-		</a>
-		<a href="tel:+64274740205" class="company-card-item">
-			<span class="company-card-icon"><span class="phone-icon"></span></span>
-			<span class="company-card-text"><div>027 474 0205</div></span>
-		</a>
-		<a href="mailto:jbelectrical@xtra.co.nz" class="company-card-item">
-			<span class="company-card-icon"><span class="email-icon"></span></span>
-			<span class="company-card-text"><div>jbelectrical@xtra.co.nz</div></span>
-		</a>
+	<div class="container">
+	<div class="row">
+		<div class="copyright col-sm-6">Copyright &copy; 2020 | JB's Electrical Rotorua</div>
+		<div class="credit col-sm-6">Website by&nbsp;
+			<a href="http://taskersolutions.co.nz/" target="_blank">Tasker Solutions</a>
+		</div>
 	</div>
-
-	<div class="copyright">Copyright &copy; 2020 | JB's Electrical Rotorua | Website developed by&nbsp;
-		<a href="http://taskersolutions.co.nz/" target="_blank">Tasker Solutions</a>
 	</div>
-</footer>
-
-<!-- bootstrap scripts -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<!-- MDB -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"></script>
-
-<!-- Load htmlshiv and Respond.js for old IE versions so we can use HTML5 elements and media queries -->
-<!--[if lt IE 9]>
-<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
-
-<!-- local scripts -->
-<script src="script/parallax.js"></script>
-<script src="script/header.js"></script>
-<script src="script/slide-modules.js"></script>
-<script src="script/script.js"></script>
+	</footer>
+	
+	<!-- bootstrap scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<!-- MDB core JavaScript -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+	
+	<!-- Load htmlshiv and Respond.js for old IE versions so we can use HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	
+	<!-- local scripts -->
+	<script src="script/parallax.js"></script>
+	<script src="script/slide-modules.js"></script>
+	<script src="script/nav-bar.js"></script>
 
 </body>
 </html>

@@ -40,118 +40,111 @@
 
 	<!-- Load Bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
-	<!-- MDB -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css"/>
+	<!-- Material Design Bootstrap -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
 
-	<!-- slide in effect -->
-	<link rel="stylesheet" href="css/come-in.css"/>
-	<!-- parallax effect -->
-	<link rel="stylesheet" href="css/parallax.css"/>
+	
 	<!-- custom styles -->
-	<link rel="stylesheet" href="css/header.css"/>
-	<link rel="stylesheet" href="css/footer.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/custom-btn.css"/>
+	<link rel="stylesheet" href="css/carousel.css"/>
+	<link rel="stylesheet" href="css/header.css"/>
+	<link rel="stylesheet" href="css/content.css"/>
+	<link rel="stylesheet" href="css/footer.css"/>
+	
+	<link rel="stylesheet" href="css/services.css"/>
+	
+	<!--  -->
+	<link rel="stylesheet" href="css/come-in.css"/>
+	<link rel="stylesheet" href="css/nav-icon.css"/>
+	<link rel="stylesheet" href="css/mobile-nav-overlay.css"/>
+	<link rel="stylesheet" href="css/parallax.css"/>
+	
 	<!-- custom breakpoints -->
 	<link rel="stylesheet" href="css/mediaqueries.css"/>
 	
 </head>
 
 <body>
-
-	
-	
 <!-- header/nav bar --> 
-<nav class="navbar navbar-expand-md">
-	<div class="container">
-		<!-- brand -->
-		<a class="navbar-brand" href="#top">
-			<img src="media/logo/logo-grey.png" alt="Logo" class="brand-image">
-			<div class="flex-container-start brand-text">
-				<div>JB's</div>
-				<div style="font-size: 0.5em;">ELECTRICAL<br>CONTRACTORS</div>
-			</div>
-		</a>
-		<!-- Toggler/collapsibe Button -->
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-			<div class="animated-icon"><span></span><span></span><span></span></div>
-		</button>
-		<!-- Navbar links -->
-		<div class="collapse navbar-collapse" id="collapsibleNavbar">
-			<ul class="navbar-nav ms-auto">
-			<li class="nav-item"><a class="nav-link" href="#top">Home</a></li>
-			<li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-			<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-			</ul>
+<div class="nav-overlay"></div>
+<nav class="navbar navbar-expand-md" id="myNav">
+<div class="container">
+	<!-- brand -->
+	<a class="navbar-brand" href="index.html">
+		<img src="media/logo/logo-grey.png" alt="Logo" class="brand-image">
+		<div class="flex-container-start brand-text">
+			<div>JB's</div>
+			<div style="font-size: 0.5em; text-transform: uppercase;">Electrical<br>Contractors</div>
 		</div>
+	</a>
+	<!-- Toggler/collapsibe Button -->
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" id="navbar-toggler">
+		<div class="animated-icon"><span></span><span></span><span></span></div>
+	</button>
+	<!-- Navbar links -->
+	<div class="collapse navbar-collapse" id="collapsibleNavbar">
+		<ul class="navbar-nav mx-auto">
+			<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+			<li class="nav-item"><a class="nav-link" href="#top">Services</a></li>
+			<li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
+		</ul>
 	</div>
+</div>
 </nav>
 
-<div id="title-carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5000">
+<div id="title-carousel" class="carousel slide carousel-fade"
+	data-ride="carousel" data-interval="5000"
+	style="max-height: 260px;">
 	<!-- The slideshow -->
 	<div class="carousel-inner">
-	  <div class="carousel-item active">
-		<img src="media/background/background-3.jpg" alt="" width="1000" height="500">
-	  </div>
-	  <div class="carousel-item">
-		<img src="media/background/background-image.jpg" alt="" width="1000" height="500">
-	  </div>
+	  	<div class="carousel-item active">
+			<img src="media/background/background-3.jpg" alt="">
+	 	</div>
+	</div>
+
+	<!-- brand overlay -->
+	<div class="carousel-overlay">
+		<img src="media/logo/logo-grey.png" alt="Logo" class="carousel-overlay-image">
+		<div class="carousel-overlay-text">
+			<div>JB's</div>
+			<div style="font-size: 0.5em; text-transform: uppercase;">Electrical<br>Contractors</div>
+		</div>
 	</div>
 </div>
 
-<!-- page title -->
-<div class="title-block">
-	<div class="container">
-		<h1 class="page-title">JB's Electrical</h1>
-		<h2 class="page-subtitle">Trusted by Rotorua for premium results</h2>
-	</div>
-</div>
 
 <!-- main content -->
 <div class="container">
-	
-	<!-- about us -->
-	<div class="" style="margin-top: 60px;">
-		JB’s Electrical started back in 1987 and over the years has earned a superb reputation.
-		<br><br>
-		With over 30 years of experience, we are committed to providing the Rotorua and
-		Bay of Plenty region with professional, honest and reliable service.
-		<br><br>
-		We employ switched on, hard working staff. Our team always gets the job done on time.
-		<br><br>
-		We use excellent quality materials and our electrical inspector ensures work is completed to the highest standard.
-
-		We use excellent materials, employ competent staff, and always get the job done on time.<br>
-		Our electrical inspector ensures work is completed to the highest standard.
-	</div>
-
-	<!-- services -->
-	<div class="heading" id="services">
-		We specialise in Trenching & Underground Services.
-		We also provide residential, commercial and industrial electrical services.<br>
-	</div>	
-
+	<!-- page title -->
+	<h1 style="margin-top: 80px; margin-bottom: 80px;">Our Services</h1>	
+		
 	<!-- services --->
-	<div class="">		
-		<div class="flex-container-start flex-item dotted-grey-bottom-border" id="trenching-div"></div>
-			<div class="column-img"><img src="media/trenching.jpg" alt="Trenching"></div>
-			<div class="column-text">
-				<div class="column-header">Trenching & Underground</div>		
-				<div class="trenching-text closed">
+	<div class="row">	
+
+		<div class="col-md-6" id="trenching">
+			<div class="services-img-container">
+				<img src="media/services/trenching.jpg" alt="Trenching">
+			</div>
+			<div class="services-text-container">
+				<h4 class="services-heading">Trenching & Underground</h4>		
+				<p class="services-text">
 					Trenching and underground services are our specialty. <br><br>
 					We offer overhead to underground conversions, power to new dwellings,
 					trenching for combined services	(eg water, gas, phone, fibre etc,)
 					and cable repair. We have a trencher which can dig trenches up to
 					several Kilometres if required.
-				</div>
-				<button class="btn read-more-btn" id="residential-btn">Read more</button>
+				</p>
 			</div>
 		</div> 
 		
-		<div class="flex-container-start flex-item dotted-grey-bottom-border" id="commercial-div">
-			<div class="column-img"><img src="media/commercial.jpg" alt="Commercial"></div>
-			<div class="column-text">
-				<div class="column-header">Commercial & Industrial</div>
-				<div class="commercial-text closed">
+		<div class="col-md-6" id="commercial">
+			<div class="services-img-container">
+				<img src="media/services/commercial.jpg" alt="Commercial">
+			</div>
+			<div class="services-text-container">
+				<h4 class="services-heading">Commercial & Industrial</h4>
+				<p class="services-text">
 					We are available for office or shop fit outs, lighting upgrades,
 					switchboard upgrades, power cabling, data cabling, testing and tagging,
 					fault finding, security/emergency/exit lighting, repairs and more. 
@@ -159,79 +152,103 @@
 					<br><br>
 					Specialised services are available for new industrial
 					project installations or maintenance.
-				</div>
-				<button class="btn read-more-btn" id="residential-btn">Read more</button>
+				</p>
 			</div>
 		</div>
 		
-		<div class="flex-container-start flex-item dotted-grey-bottom-border" id="residential-div">
-			<div class="column-img"><img src="media/residential.jpg" alt="Residential"></div>
-			<div class="column-text">
-				<div class="column-header">Residential</div>
-				<div class="residential-text closed">
+		<div class="col-md-6" id="residential">
+			<div class="services-img-container">
+				<img src="media/services/residential.jpg" alt="Residential">
+			</div>
+			<div class="services-text-container">
+				<h4 class="services-heading">Residential & installations</h4>
+				<p class="services-text">
 					We can assist you with new homes, renovations, alterations, maintenance
 					or projects such as	indoor or outdoor lighting upgrades, underfloor heating,
 					switchboard replacements or any other household requirements. We can work
 					with your plans or are happy to	offer advice based on our years of experience.
-				</div>
-				<button class="btn read-more-btn" id="residential-btn">Read more</button>
+				</p>
 			</div>
 		</div>
-	</div> 
-		
+
+		<div class="col-md-6" id="inspections">
+			<div class="services-img-container">
+				<img src="media/services/commercial.jpg" alt="Residential">
+			</div>
+			<div class="services-text-container">
+				<h4 class="services-heading">Electrical Inspections</h4>
+				<p class="services-text">
+					Our certified electrical inspector is able to certify new connections, verify 
+					the quality of existing connections, provide electrical Warrant inspections, 
+					Pre purchase inspections & more. Get in touch with us to discuss more about 
+					what we can do for you.
+				</p>
+			</div>
+		</div>
+	</div>
+</div> 
 						
 </div> 
 <!-- end main content container -->
 
+
+<!-- content div -->
+<div class="content-div">
+<div class="container">
+<div class="row">
+	<!-- contact info -->
+	<div class="col-md-12 flex-container-center content-item">
+		<h3 class="heading">
+			<a href="contact.php" class="link-padding">Contact us today</a>
+		</h3>
+		<p class="content-text">
+			<span style="font-weight: bold;">Phone</span>
+			<br>
+			<a href="tel:+64274740205" class="link-padding">
+				027 474 0205</a>
+			<br><br>
+			<span style="font-weight: bold;">Email</span>
+			<br>
+			<a href="mailto:jbelectrical@xtra.co.nz" class="link-padding">
+				jbelectrical@xtra.co.nz</a>
+		</p>
+			
+		<a href="contact.php" class="btn custom-btn">Send us a message</a>
+	</div>
+
+</div>
+</div>
+</div>
+
 	
 <footer>
-
-	<div class="flex-container-center company-card">
-		<a class="company-card-item  margin-top-20px">
-			<span class="company-card-icon"><span class="clock-icon"></span></span>
-			<span class="company-card-text"><div>8am - 5pm Weekdays</div></span>
-		</a>
-		<a href="tel:+6473456908" class="company-card-item">
-			<span class="company-card-icon"><span class="fax-icon"></span></span>
-			<span class="company-card-text"><div>Fax: 07 345 6908</div></span>
-		</a>
-		<a class="company-card-item" target="_blank" href="https://www.google.com/maps/dir//J+B's+Electrical+53+Vaughan+Road,+Ngapuna,+Rotorua+3010/@-38.1444337,176.2750314,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x6d6e9c4cd4c1c27f:0x473f6d5b010b9718!2m2!1d176.2772201!2d-38.1444337!3e0">
-			<span class="company-card-icon"><span class="location-icon"></span></span>
-			<span class="company-card-text">53 Vaughan Road, Ngapuna, Rotorua 3010</span>
-		</a>
-		<a href="tel:+64274740205" class="company-card-item">
-			<span class="company-card-icon"><span class="phone-icon"></span></span>
-			<span class="company-card-text"><div>027 474 0205</div></span>
-		</a>
-		<a href="mailto:jbelectrical@xtra.co.nz" class="company-card-item">
-			<span class="company-card-icon"><span class="email-icon"></span></span>
-			<span class="company-card-text"><div>jbelectrical@xtra.co.nz</div></span>
-		</a>
-	</div>
-
-	<div class="copyright">Copyright &copy; 2020 | JB's Electrical Rotorua | Website developed by&nbsp;
+<div class="container">
+<div class="row">
+	<div class="copyright col-sm-6">Copyright &copy; 2020 | JB's Electrical Rotorua</div>
+	<div class="credit col-sm-6">Website by&nbsp;
 		<a href="http://taskersolutions.co.nz/" target="_blank">Tasker Solutions</a>
 	</div>
+</div>
+</div>
 </footer>
-
-<!-- bootstrap scripts -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<!-- MDB -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"></script>
-
-<!-- Load htmlshiv and Respond.js for old IE versions so we can use HTML5 elements and media queries -->
-<!--[if lt IE 9]>
-<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
-
-<!-- local scripts -->
-<script src="script/parallax.js"></script>
-<script src="script/header.js"></script>
-<script src="script/slide-modules.js"></script>
-<script src="script/script.js"></script>
+	
+	<!-- bootstrap scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<!-- MDB core JavaScript -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+	
+	<!-- Load htmlshiv and Respond.js for old IE versions so we can use HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	
+	<!-- local scripts -->
+	<script src="script/parallax.js"></script>
+	<script src="script/slide-modules.js"></script>
+	<script src="script/nav-bar.js"></script>
 
 </body>
 </html>

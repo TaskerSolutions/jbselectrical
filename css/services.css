@@ -1,0 +1,28 @@
+.col-md-6 {
+    padding: 20px 30px;
+}
+
+
+.services-img-container {
+    width: 100%;
+}
+
+.services-img {
+    width: 100%;
+}
+
+
+.services-text-container {
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+.services-heading {
+    margin-bottom: 20px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.services-text {
+
+}

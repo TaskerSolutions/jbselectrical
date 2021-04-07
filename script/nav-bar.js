@@ -10,7 +10,7 @@ $(document).ready(function () {
   $('.navbar-toggler').on('click', function () {
     $('.animated-icon').toggleClass('open');
     
-    var overlay = $('.overlay');
+    var overlay = $('.nav-overlay');
     var navbar = $('.navbar');
     
     if(overlayHidden) {
@@ -19,10 +19,16 @@ $(document).ready(function () {
       overlay.show();
       overlay.animate(
           {opacity: "1"},
-          200
+          100
         );
       overlay.css("z-index", "20");
       navbar.css("background-color", "#00000000");
+
+      // disable scroll
+      $('html, body').css({
+        overflow: 'hidden',
+      });
+
     } else {
       // hide overlay
       overlayHidden = true;
@@ -35,6 +41,10 @@ $(document).ready(function () {
          navbar.css("background-color", "#1b1b1be8");
       }, 200);
      
+      // enable scroll
+      $('html, body').css({
+        overflow: 'auto',
+      });
     }
   });
 });
