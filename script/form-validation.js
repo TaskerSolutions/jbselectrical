@@ -16,3 +16,7 @@
       });
     }, false);
   })();
+
+$('#contact-form').on('submit', function(ev) {
+  $('#confirmation-modal').modal('show');
+});

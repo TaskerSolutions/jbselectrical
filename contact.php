@@ -64,7 +64,19 @@
 		.contact-item {	margin-bottom: 50px; }
 		label { font-size: 1.1em }
 	</style>
+
+	<!-- bootstrap scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<!-- MDB core JavaScript -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
 	
+	<!-- Load htmlshiv and Respond.js for old IE versions so we can use HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->	
 </head>
 
 <body>
@@ -79,7 +91,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	if (empty($_POST['name'])) {
 		$formValid = false;
 	} else {
-		$email = test_input($_POST['name']);
+		$name = test_input($_POST['name']);
 	}
 	if (empty($_POST['email'])) {
 		$formValid = false;
@@ -115,14 +127,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$headers2 = "From: " . $to ;
 
 	if ($formValid) {
-		mail($to , "Website Message" , $myMessage , $headers);
+		mail($to , "Message from website" , $myMessage , $headers);
 		mail($email , "Thank you for your message" , $customerMessage , $headers2); // sends a copy of the message to the sender
-		
-		echo '<script>alert("\n Thank you for your message! \n\n A confirmation email has been sent to ' . $email . '\n\n We will get back to you as soon as possible.");</script>';	
+		echo "<script>$('#confirmation-modal').modal();</script>" ;
 	} else {
 		echo '<script>alert("\n Your message failed to send. \n\n Please try again.");</script>';
 	}
-	// You can also use header('Location: thank_you.php'); to redirect to another page.
+
 }
 
 function test_input($data) {
@@ -132,6 +143,29 @@ function test_input($data) {
 	return $data;
 }
 ?>
+
+<!-- Confirmation modal - opens when user submits form -->
+<div class="modal fade" id="confirmation-modal" style="color: black;">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content">
+	<!-- Modal Header -->
+	<div class="modal-header">
+		<h4 class="modal-title mx-auto">Thank you for your message!</h4>
+	</div>
+	<!-- Modal body -->
+	<div class="modal-body">
+		A confirmation email has been send to <?php echo $email ; ?>
+		<br><br>
+		We will be in touch shortly to discuss your enquiry.
+	</div>
+	<!-- Modal footer -->
+	<div class="modal-footer">
+		<button class="btn btn-primary mx-auto">close</button>
+	</div>
+</div>
+</div>
+</div>
+
 
 <!-- header/nav bar --> 
 <div class="nav-overlay"></div>
@@ -187,7 +221,7 @@ data-ride="carousel" data-interval="5000" style="max-height: 260px;">
 
 <!-- bootstrap contact form -->
 <div class="slide" style="margin-bottom: 80px;">
-<form method="post" action="<?php htmlspecialchars($_SERVER["PHP_SELF"]);?>"
+<form method="post" action="<?php htmlspecialchars($_SERVER["PHP_SELF"]);?>" id="contact-form"
 class="needs-validation" novalidate style="max-width: 600px; margin: auto;">
 	<div class="form-group">
 		<label for="name">Your name</label>
@@ -274,18 +308,7 @@ class="needs-validation" novalidate style="max-width: 600px; margin: auto;">
 	</div>
 	</footer>
 	
-	<!-- bootstrap scripts -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-	<!-- MDB core JavaScript -->
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
-	
-	<!-- Load htmlshiv and Respond.js for old IE versions so we can use HTML5 elements and media queries -->
-	<!--[if lt IE 9]>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-	<![endif]-->
+
 	
 	<!-- local scripts -->
 	<script src="script/parallax.js"></script>

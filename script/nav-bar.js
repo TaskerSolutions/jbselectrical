@@ -1,7 +1,7 @@
-// collapse bootstrap navbar on click of a link
+/* collapse bootstrap navbar on click of a link
 $('.navbar-nav>li>a').on('click', function(){
   $('.navbar-collapse').collapse('hide');
-});
+});*/
 
 var overlayHidden = true;
 
