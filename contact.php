@@ -18,7 +18,7 @@
 	<meta name="author" content="Tasker Solutions"/>
 
 	<!-- Facebook sharing crieria. Description helps click through rate and conversions -->
-	<meta property="og:image" content="media/card.jpg" />
+	<meta property="og:image" content="media/logo/card.jpg" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://taskersolutions.co.nz/jbselectrical/jb2/index.html" />
 	<meta property="og:description" content="JB's Electrical are professional and reliable electricians,
