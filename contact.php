@@ -18,7 +18,7 @@
 	<meta name="author" content="Tasker Solutions"/>
 
 	<!-- Facebook sharing crieria. Description helps click through rate and conversions -->
-	<meta property="og:image" content="media/logo/card.jpg" />
+	<meta property="og:image" content="media/trencher.png" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://taskersolutions.co.nz/jbselectrical/jb2/index.html" />
 	<meta property="og:description" content="JB's Electrical are professional and reliable electricians,
@@ -160,7 +160,7 @@ function test_input($data) {
 <div class="container">
 	<!-- brand -->
 	<a class="navbar-brand" href="index.html">
-		<img src="media/logo/logo-grey.png" alt="Logo" class="brand-image">
+		<img src="media/logo/trencher.png" alt="Logo" class="brand-image">
 		<div class="flex-container-start brand-text">
 			<div>JB's</div>
 			<div style="font-size: 0.5em; text-transform: uppercase;">Electrical<br>Contractors Ltd</div>
@@ -192,7 +192,7 @@ data-ride="carousel" data-interval="5000" style="max-height: 360px;">
 
 	<!-- brand overlay -->
 	<div class="carousel-overlay">
-		<img src="media/logo/logo-grey.png" alt="Logo" class="carousel-overlay-image">
+		<img src="media/logo/trencher.png" alt="Logo" class="carousel-overlay-image">
 		<div class="carousel-overlay-text">
 			<div>JB's</div>
 			<div style="font-size: 0.5em; text-transform: uppercase;">Electrical<br>Contractors Ltd</div>

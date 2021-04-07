@@ -33,7 +33,7 @@
 @media only screen and (min-width: 992px) {
 	body { font-size: 17px;	}
 
-	.carousel-overlay-image { width: 300px; }
+	.carousel-overlay-image { width: 320px; }
 	.carousel-overlay-text { font-size: 4em; }
 	
 }
@@ -42,7 +42,7 @@
 /* --------------- 1312px (large desktops) --------------- */
 @media only screen and (min-width: 1312px) {
 	body { font-size: 18px;	}
-	.carousel-overlay-image { width: 340px; }
+	.carousel-overlay-image { width: 380px; }
 	.carousel-overlay-text { font-size: 4.8em; }
 }
 
