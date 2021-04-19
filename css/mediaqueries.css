@@ -15,7 +15,7 @@
 /* --------------- 768px (Tablets) --------------- */
 @media only screen and (min-width: 768px) {
 	body { font-size: 16px;	}
-	.carousel-inner img { width: 100%; height: 100%; }
+	.carousel-inner img { width: 100%; height: 100%;	transform: translateX(0%);}
 
 	/* nav */
 	.nav-overlay { display: none; }
@@ -44,9 +44,12 @@
 	body { font-size: 18px;	}
 	.carousel-overlay-image { width: 380px; }
 	.carousel-overlay-text { font-size: 4.8em; }
+
+
 }
 
 
 /* --------------- 1600px (extra large desktops) --------------- */
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 2000px) {
+	.carousel-inner img { transform: translateY(-22%); }
 }

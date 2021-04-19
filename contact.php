@@ -182,22 +182,22 @@ function test_input($data) {
 </nav>
 
 <div id="title-carousel" class="carousel slide carousel-fade"
-data-ride="carousel" data-interval="5000" style="max-height: 360px;">
+data-ride="carousel" data-interval="5000">
 	<!-- The slideshow -->
 	<div class="carousel-inner">
-	  	<div class="carousel-item active">
-			<img src="media/background/bg7.jpg" alt="">
-	 	</div>
+		<div class="carousel-item active">
+			<img src="media/background/bg7.jpg" alt="background-image">
+		</div>
 	</div>
 
-	<!-- brand overlay -->
+	<!-- brand overlay
 	<div class="carousel-overlay">
 		<img src="media/logo/trencher.png" alt="Logo" class="carousel-overlay-image">
 		<div class="carousel-overlay-text">
 			<div>JB's</div>
 			<div style="font-size: 0.5em; text-transform: uppercase;">Electrical<br>Contractors Ltd</div>
 		</div>
-	</div>
+	</div> -->
 </div>
 
 
