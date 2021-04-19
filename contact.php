@@ -273,6 +273,14 @@ class="needs-validation" novalidate style="max-width: 600px; margin: auto;">
 		53 Vaughan Road, Ngapuna, Rotorua 3010<br>
 		Our office is usually unatended. Please call us to get in touch.
 	</div>
+
+	<div class="contact-item">
+		<span style="font-weight: bold;">JB's Would Love Your Feedback</span>
+		<br>
+		<a class="btn btn-primary" href="https://g.page/r/CRiXCwFbbT9HEAE/review" target="_blank"
+		style="font-size: 0.8em; margin-top: 15px;">
+			Leave a google review</a>
+	</div>
 	<!--
 	<iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d3137.8176149834076!2d176.2750314!3d-38.1444337!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x6d6e9c4cd4c1c27f%3A0x473f6d5b010b9718!2sJ%20B&#39;s%20Electrical%2053%20Vaughan%20Road%2C%20Ngapuna%2C%20Rotorua%203010!3m2!1d-38.1444337!2d176.2772201!5e0!3m2!1sen!2snz!4v1617757416746!5m2!1sen!2snz"
 	style="border:0; width: 100%; height: 300px; max-width: 500px;" allowfullscreen="" loading="lazy"></iframe>
