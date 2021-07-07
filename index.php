@@ -20,7 +20,7 @@
 	<!-- Facebook sharing crieria. Description helps click through rate and conversions -->
 	<meta property="og:image" content="media/logo/trencher.png" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="http://taskersolutions.co.nz/jbselectrical/jb2/index.html" />
+	<meta property="og:url" content="http://taskersolutions.co.nz/jbselectrical/jb2/index.php" />
 	<meta property="og:description" content="JB's Electrical are professional and reliable electricians,
 	servicing Rotorua and surrounding areas. You can trust JB's for premium results." />
 	
@@ -82,7 +82,7 @@
 	<div class="collapse navbar-collapse" id="collapsibleNavbar">
 		<ul class="navbar-nav mx-auto">
 			<li class="nav-item"><a class="nav-link" href="#top">Home</a></li>
-			<li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+			<li class="nav-item"><a class="nav-link" href="services.php">Services</a></li>
 			<li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
 		</ul>
 	</div>
@@ -131,14 +131,14 @@
 <div class="row">
 	<!-- services -->
 	<div class="col-md-6 flex-container-center content-item" style="line-height: 2;">
-		<h3 class="heading"><a href="services.html">Our Services</a></h3>
+		<h3 class="heading"><a href="services.php">Our Services</a></h3>
 		<p class="content-text">
-			<a href="services.html#trenching">Trenching & Underground</a><br>
-			<a href="services.html#residential">Residential & Installations</a><br>
-			<a href="services.html#commercial">Commercial & Industrial</a><br>
-			<a href="services.html#inspections">Electrical inspections</a>
+			<a href="services.php#trenching">Trenching & Underground</a><br>
+			<a href="services.php#residential">Residential & Installations</a><br>
+			<a href="services.php#commercial">Commercial & Industrial</a><br>
+			<a href="services.php#inspections">Electrical inspections</a>
 		</p>
-		<a href="services.html" class="btn btn-primary">Find out more</a>
+		<a href="services.php" class="btn btn-primary">Find out more</a>
 	</div>
 
 	<!-- contact info -->

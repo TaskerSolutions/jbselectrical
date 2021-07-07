@@ -20,7 +20,7 @@
 	<!-- Facebook sharing crieria. Description helps click through rate and conversions -->
 	<meta property="og:image" content="media/trencher.png" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="http://taskersolutions.co.nz/jbselectrical/jb2/index.html" />
+	<meta property="og:url" content="http://taskersolutions.co.nz/jbselectrical/jb2/index.php" />
 	<meta property="og:description" content="JB's Electrical are professional and reliable electricians,
 	servicing Rotorua and surrounding areas. You can trust JB's for premium results." />
 	
@@ -159,7 +159,7 @@ function test_input($data) {
 <nav class="navbar navbar-expand-md" id="myNav">
 <div class="container">
 	<!-- brand -->
-	<a class="navbar-brand" href="index.html">
+	<a class="navbar-brand" href="index.php">
 		<img src="media/logo/trencher.png" alt="Logo" class="brand-image">
 		<div class="flex-container-start brand-text">
 			<div>JB's</div>
@@ -173,8 +173,8 @@ function test_input($data) {
 	<!-- Navbar links -->
 	<div class="collapse navbar-collapse" id="collapsibleNavbar">
 		<ul class="navbar-nav mx-auto">
-			<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-			<li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+			<li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+			<li class="nav-item"><a class="nav-link" href="services.php">Services</a></li>
 			<li class="nav-item"><a class="nav-link" href="#top">Contact</a></li>
 		</ul>
 	</div>
